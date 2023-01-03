@@ -7,27 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ink0nyz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ink0nyz.css">
+
 </head>
 
-<body>
+<body id="body">
     <main>
-        <div id="screen">
-            <div id="forside_img">
-                <img src="" alt="">
+
+    </main>
+    <div id="screen">
+
+        <div id="elements">
+            <div id="ama_container">
+                <div id="ama_sprite"></div>
+            </div>
+            <div id="lie_container">
+                <div id="lie_sprite"></div>
+            </div>
+            <div id="sar_container">
+                <div id="sar_sprite"></div>
+            </div>
+            <div id="felt_container">
+                <div id="felt_sprite"></div>
+            </div>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">FORSIDE</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="ommig.html">OM MIG</a>
+
 
             </div>
         </div>
-    </main>
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+        <div onclick="openNav()" class="menu">
+            <h2>menu</h2>
         </div>
+
     </div>
-    <div onclick="openNav()" class="menu"> </div>
+
 
 
 

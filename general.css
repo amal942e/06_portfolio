@@ -1,0 +1,22 @@
+/****** farver ********/
+.color1 {
+  color: #330914;
+}
+.color2 {
+  color: #9b853c;
+}
+.tekst1 {
+  font-family: skolar-sans-latin-extended, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.tekst2 {
+  font-family: skolar-sans-latin-extended, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.tekst3 {
+  font-family: neue-kabel, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
