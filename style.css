@@ -93,8 +93,9 @@ main {
 }
 .box {
   aspect-ratio: 1/1;
-  width: 245px;
+  width: 250px;
   display: flex;
+  margin-bottom: 5px;
 }
 
 .flex {
@@ -126,6 +127,7 @@ p {
   font-weight: 300;
   font-style: normal;
   font-size: 13px;
+  margin: 10px;
 }
 p span {
   font-family: skolar-sans-latin-extended, sans-serif;
@@ -134,7 +136,7 @@ p span {
   font-size: 20px;
   display: block;
   color: #9b853c;
-  padding: 30px;
+  padding: 20px;
 }
 
 /******** menu ************/
@@ -209,4 +211,11 @@ p span {
   display: inline-block;
   align-self: flex-end;
   margin: 40px;
+}
+
+/***** Footer ******/
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
 }
