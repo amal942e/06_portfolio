@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+img {
+  width: 100%;
+  height: auto;
+}
 body {
   font-family: "Lato", sans-serif;
 }
@@ -82,17 +86,23 @@ main {
   margin-bottom: 10px;
 }
 
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 10px;
+}
 .box {
   aspect-ratio: 1/1;
   width: 245px;
   display: flex;
 }
+
 .flex {
   display: inline-block;
   align-self: flex-end;
 }
 .space {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 h1 {
   font-family: neue-kabel, sans-serif;
@@ -116,6 +126,15 @@ p {
   font-weight: 300;
   font-style: normal;
   font-size: 13px;
+}
+p span {
+  font-family: skolar-sans-latin-extended, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 20px;
+  display: block;
+  color: #9b853c;
+  padding: 30px;
 }
 
 /******** menu ************/
@@ -183,4 +202,11 @@ p {
 }
 .menu:hover {
   color: #9b853c;
+}
+
+.pil {
+  width: 50px;
+  display: inline-block;
+  align-self: flex-end;
+  margin: 40px;
 }
