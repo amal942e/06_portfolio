@@ -116,7 +116,9 @@ main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin-bottom: 10px;
+  gap: 20px;
 }
+
 .box {
   aspect-ratio: 1/1;
   width: 250px;
@@ -169,6 +171,16 @@ p span {
   display: inline-block;
   align-self: flex-end;
   margin: 40px;
+}
+
+/********* OM MIG*********/
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.mig {
+  margin-top: 100px;
 }
 
 /******** menu ************/
