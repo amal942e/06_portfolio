@@ -28,8 +28,6 @@ main {
   #ama_container {
     width: 21%;
     aspect-ratio: 400/165;
-    top: 24%;
-    left: 26%;
     position: absolute;
   }
   #ama_sprite {
@@ -42,8 +40,6 @@ main {
   #lie_container {
     width: 11%;
     aspect-ratio: 220/165;
-    top: 40%;
-    left: 36%;
     position: absolute;
   }
   #lie_sprite {
@@ -55,8 +51,6 @@ main {
   #sar_container {
     width: 9%;
     aspect-ratio: 160/290;
-    top: 41%;
-    left: 49%;
     position: absolute;
   }
   #sar_sprite {
@@ -68,8 +62,6 @@ main {
   #felt_container {
     width: 15%;
     aspect-ratio: 300/165;
-    top: 55%;
-    left: 56%;
     position: absolute;
   }
   #felt_sprite {
@@ -104,6 +96,22 @@ main {
     background-image: url("assets/ommig.svg");
     background-size: cover;
   }
+  .pos1 {
+    top: 24%;
+    left: 26%;
+  }
+  .pos2 {
+    top: 40%;
+    left: 36%;
+  }
+  .pos3 {
+    top: 41%;
+    left: 49%;
+  }
+  .pos4 {
+    top: 55%;
+    left: 56%;
+  }
 }
 /******** Galleri *********/
 .grid_1-1-1 {
@@ -116,7 +124,7 @@ main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin-bottom: 10px;
-  gap: 20px;
+  gap: 30px;
 }
 
 .box {
