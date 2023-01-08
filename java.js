@@ -12,10 +12,13 @@ function sidenVises() {
   document.querySelector("#lie_container").classList.add("pos2");
   document.querySelector("#sar_container").classList.add("pos3");
   document.querySelector("#felt_container").classList.add("pos4");
-  document.querySelector("#ama_container").addEventListener("onmouseover", startGame);
+  document.querySelector("#ama_sprite").addEventListener("onmouseover", myMouse);
+  document.querySelector("#lie_sprite").addEventListener("onmouseover", myMouse);
+  document.querySelector("#sar_sprite").addEventListener("onmouseover", myMouse);
+  document.querySelector("#felt_sprite").addEventListener("onmouseover", myMouse);
 }
-function startGame() {
-  console.log("startGame");
+function myMouse() {
+  console.log("mouseover");
   document.querySelector("#ama_container").classList = "";
   document.querySelector("#lie_container").classList = "";
   document.querySelector("#sar_container").classList = "";

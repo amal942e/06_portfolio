@@ -15,6 +15,9 @@ body {
   background-size: cover;
 }
 main {
+  max-width: 850px;
+}
+#main_portfolio {
   max-width: 750px;
 }
 
@@ -122,7 +125,13 @@ main {
 
 .grid_1-1 {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
+  gap: 30px;
+}
+.grid_5-3 {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
   margin-bottom: 10px;
   gap: 30px;
 }
@@ -174,11 +183,30 @@ p span {
   color: #9b853c;
   padding: 20px;
 }
+h3 span {
+  font-weight: 300;
+  padding: 5px;
+  color: #330914;
+}
+
 .pil {
   width: 50px;
   display: inline-block;
   align-self: flex-end;
   margin: 40px;
+}
+
+a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 23px;
+  font-family: neue-kabel, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #330914;
+}
+a:hover {
+  color: #9b853c;
 }
 
 /********* OM MIG*********/
