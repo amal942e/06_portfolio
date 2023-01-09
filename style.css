@@ -7,15 +7,19 @@ img {
   width: 100%;
   height: auto;
 }
+img:hover {
+}
 body {
   font-family: "Lato", sans-serif;
 }
 #body {
-  background-image: url("img/forside_img.png");
+  background-image: url("img/mobilefirst.png");
   background-size: cover;
 }
+
 main {
   max-width: 850px;
+  margin: 10px;
 }
 #main_portfolio {
   max-width: 750px;
@@ -23,6 +27,10 @@ main {
 
 /********* forside animation ********/
 @media (min-width: 800px) {
+  #body {
+    background-image: url("img/forside_img.png");
+    background-size: cover;
+  }
   #screen {
     width: 100%;
     aspect-ratio: 16/9;
@@ -116,24 +124,31 @@ main {
     left: 56%;
   }
 }
-/******** Galleri *********/
-.grid_1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 10px;
-}
 
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 10px;
-  gap: 30px;
-}
-.grid_5-3 {
-  display: grid;
-  grid-template-columns: 5fr 3fr;
-  margin-bottom: 10px;
-  gap: 30px;
+/******** Galleri *********/
+
+@media (min-width: 800px) {
+  main {
+    margin: auto;
+  }
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 10px;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+    gap: 30px;
+  }
+  .grid_5-3 {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    margin-bottom: 10px;
+    gap: 30px;
+  }
 }
 
 .box {
@@ -171,7 +186,7 @@ p {
   font-family: skolar-sans-latin-extended, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 13px;
+  font-size: 14px;
   margin: 10px;
 }
 p span {
@@ -210,13 +225,30 @@ a:hover {
 }
 
 /********* OM MIG*********/
-.grid_1-1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+@media (min-width: 700px) {
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .mig {
+    margin-top: 100px;
+  }
+  .mobil {
+    display: none;
+  }
 }
-.mig {
-  margin-top: 100px;
+@media (max-width: 450px) {
+  h1 {
+    font-size: 40px;
+    margin: 20px;
+  }
+  .om {
+    display: none;
+  }
+  .mig {
+    display: none;
+  }
 }
 
 /******** menu ************/
@@ -273,7 +305,7 @@ nav ul {
   font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
   .overlay a {
     font-size: 20px;
   }
@@ -281,6 +313,10 @@ nav ul {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+  nav ul {
+    display: block;
+    font-size: 10px;
   }
 }
 
@@ -297,7 +333,30 @@ nav ul {
 
 /***** Footer ******/
 footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
+  display: none;
+}
+@media (min-width: 700px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+}
+
+/******* Animationer *****/
+.flyv1 {
+  animation-name: bouncing_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+@keyframes bouncing_kf {
+  0% {
+    translate: 0 -30%;
+  }
+  50% {
+    translate: 0 30%;
+  }
+  100% {
+  }
 }

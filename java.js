@@ -5,26 +5,44 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+const ama = document.querySelector("#ama_container");
+const lie = document.querySelector("#lie_container");
+const sar = document.querySelector("#sar_container");
+const felt = document.querySelector("#felt_container");
 window.addEventListener("load", sidenVises);
 function sidenVises() {
   console.log("sidenVises");
-  document.querySelector("#ama_container").classList.add("pos1");
-  document.querySelector("#lie_container").classList.add("pos2");
-  document.querySelector("#sar_container").classList.add("pos3");
-  document.querySelector("#felt_container").classList.add("pos4");
-  document.querySelector("#ama_sprite").addEventListener("onmouseover", myMouse);
-  document.querySelector("#lie_sprite").addEventListener("onmouseover", myMouse);
-  document.querySelector("#sar_sprite").addEventListener("onmouseover", myMouse);
-  document.querySelector("#felt_sprite").addEventListener("onmouseover", myMouse);
+  ama.classList.add("pos1");
+  lie.classList.add("pos2");
+  sar.classList.add("pos3");
+  felt.classList.add("pos4");
+
+  ama.addEventListener("mouseover", mouseOverAma);
+  lie.addEventListener("mouseover", mouseOverLie);
+  sar.addEventListener("mouseover", mouseOverSar);
+  felt.addEventListener("mouseover", mouseOverFelt);
 }
-function myMouse() {
+function mouseOverAma() {
   console.log("mouseover");
-  document.querySelector("#ama_container").classList = "";
-  document.querySelector("#lie_container").classList = "";
-  document.querySelector("#sar_container").classList = "";
-  document.querySelector("#felt_container").classList = "";
-  document.querySelector("#ama_container").classList.add("pos3");
-  document.querySelector("#lie_container").classList.add("pos4");
-  document.querySelector("#sar_container").classList.add("pos1");
-  document.querySelector("#felt_container").classList.add("pos2");
+  ama.classList.remove("flyv1");
+  ama.offsetLeft;
+  ama.classList.add("flyv1");
+}
+function mouseOverLie() {
+  console.log("mouseover");
+  lie.classList.remove("flyv1");
+  lie.offsetLeft;
+  lie.classList.add("flyv1");
+}
+function mouseOverSar() {
+  console.log("mouseover");
+  sar.classList.remove("flyv1");
+  sar.offsetLeft;
+  sar.classList.add("flyv1");
+}
+function mouseOverFelt() {
+  console.log("mouseover");
+  felt.classList.remove("flyv1");
+  felt.offsetLeft;
+  felt.classList.add("flyv1");
 }
