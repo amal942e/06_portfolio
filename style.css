@@ -7,8 +7,7 @@ img {
   width: 100%;
   height: auto;
 }
-img:hover {
-}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -345,18 +344,19 @@ footer {
 
 /******* Animationer *****/
 .flyv1 {
-  animation-name: bouncing_kf;
-  animation-duration: 1s;
+  animation-name: forsvind_kf;
+  animation-duration: 4s;
   animation-iteration-count: 1;
-  animation-timing-function: ease-in;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
 }
-@keyframes bouncing_kf {
+
+@keyframes forsvind_kf {
   0% {
-    translate: 0 -30%;
+    opacity: 1;
   }
-  50% {
-    translate: 0 30%;
-  }
+
   100% {
+    opacity: 0;
   }
 }
