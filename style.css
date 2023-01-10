@@ -180,6 +180,7 @@ h3 {
   font-family: skolar-sans-latin-extended, sans-serif;
   font-weight: 100;
   font-style: normal;
+  text-align: left;
 }
 p {
   font-family: skolar-sans-latin-extended, sans-serif;
@@ -187,6 +188,7 @@ p {
   font-style: normal;
   font-size: 14px;
   margin: 10px;
+  text-align: left;
 }
 p span {
   font-family: skolar-sans-latin-extended, sans-serif;
@@ -224,11 +226,18 @@ a:hover {
 }
 
 /********* OM MIG*********/
-@media (min-width: 700px) {
+#about {
+  max-width: 1000px;
+}
+.fullbody {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 600px) {
   .grid_1-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
   }
   .mig {
     margin-top: 100px;
@@ -248,16 +257,19 @@ a:hover {
   .mig {
     display: none;
   }
+  .laptop {
+    display: none;
+  }
 }
 
 /******** menu ************/
 
-nav ul {
-  display: flex;
-  justify-content: space-between;
+#myLinks a {
+  display: inline;
+
   list-style: none;
   color: #330914;
-  font-size: 10px;
+  font-size: 30px;
 }
 
 .overlay {
@@ -277,7 +289,6 @@ nav ul {
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
 }
 
 .overlay a {
@@ -306,16 +317,16 @@ nav ul {
 
 @media screen and (max-width: 450px) {
   .overlay a {
-    font-size: 20px;
+    font-size: 30px;
   }
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
-  nav ul {
+  #myLinks a {
     display: block;
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 
@@ -338,7 +349,7 @@ footer {
   footer {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    margin: 30px;
   }
 }
 
