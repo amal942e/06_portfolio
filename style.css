@@ -164,6 +164,10 @@ main {
 .space {
   margin-top: 40px;
 }
+.width {
+  width: 130px;
+  margin-top: 30px;
+}
 h1 {
   font-family: neue-kabel, sans-serif;
   font-weight: 600;
@@ -211,6 +215,10 @@ h3 span {
   align-self: flex-end;
   margin: 40px;
 }
+.pil:hover,
+.pildrej:hover {
+  transform: rotate(0.05turn);
+}
 
 a {
   padding: 20px;
@@ -219,10 +227,10 @@ a {
   font-family: neue-kabel, sans-serif;
   font-weight: 600;
   font-style: normal;
-  color: #330914;
+  color: #330909;
 }
 a:hover {
-  color: #9b853c;
+  color: #b22222;
 }
 
 /********* OM MIG*********/
